@@ -1,0 +1,132 @@
+/* General */
+
+* {
+    box-sizing: border-box;
+}
+
+html,body {
+    margin:0;
+    padding:0;
+}
+nav {
+    position: fixed;
+    z-index: 9000;
+    width: 100%;
+    display: none;
+}
+footer {
+  font-size: small;
+  /* background-color: #1c1b1b; */
+  color: rgb(95, 95, 95);
+  position: absolute;
+  top: 100%;
+  margin-top: -15px;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+}
+
+sup {
+    font-size: 15px;
+    top: -3.5em !important;
+}
+
+/* Fonts */
+/*source: https://www.dafont.com/fr/karabine.font*/
+@font-face {
+  font-family: 'karabine';
+  font-weight: bolder;
+  src: url('/fonts/karabine.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/karabine.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/karabine.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/karabine.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/karabine.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* Sidecard */
+
+.sidecard {
+    box-shadow: 1px 0px 10px 2px rgb(192, 192, 192); 
+    /* height: 100%; */
+}
+
+.up,.bottom {
+    box-shadow: 1px 0px 10px 2px rgb(192, 192, 192); 
+}
+
+.sidecard .up {
+    width: 104%;
+    height: 300px;
+    background: #ece7cc;
+    color: white;
+    text-align: right;
+    padding: 15px;
+    /*sourse: https://trasparenttextures.com */
+    background-image: url("../img/low-contrast-linen.png");
+}
+
+.sidecard .bottom {
+    width: 104%;
+    height: 100%;
+    background: #719fcf;
+    padding: 15px;
+
+}
+
+.sidecard .bottom * {
+    color: rgb(9, 8, 8) !important;
+}
+
+.sidecard .segment {
+    position: sticky;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: medium;
+    margin: 0 0%;
+
+}
+
+h4.contents {
+    margin: 0 10%;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.bottom .sticky {
+    position: fixed;
+    top: 10px;
+    left: -100px;
+    width: 340px;
+    margin: -9px 7.7%;
+
+}
+
+.sidecard .logo-txt {
+    color: #c00;
+    margin: 7px 0px 0px 20px !important;
+    font-size: xx-large;
+    font-family: 'karabine';
+}
+
+.date {
+    font-size: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.ui.list>.item a.header {
+    font-size: x-large;
+    margin: 10px 0;
+    line-height: 25px;
+}
+.description {
+    color: grey;
+}
+div.ui.container {
+    margin-top: 50px;
+    margin: 50px 0 50px 0;
+}
+.copy {
+    margin-left: 40%;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    {% include head.html %}
+    
+</head>
+<body>
+
+    <div class="ui two column grid">
+    
+        {% include header.html %}
+    
+        <div class="ui container eleven wide column">
+    
+            {{ content }}
+    
+            {% include footer.html %}
+            
+        </div>
+    </div>
+    
+</body>
+</html>

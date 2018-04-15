@@ -1,0 +1,24 @@
+<div class="four wide sidecard column">
+    <!-- <a href="/"><section class="up" style="{% if post.subtitle %}{{ 'background-image: url(/img/header-img.jpeg); background-size:cover;background-position:left;' }}{% else %} {{ 'background-image: url(../img/low-contrast-line.png);'}} {% endif %}"> -->
+    <a href="/"><section class="up">
+        <h1 class="date">14<sup>th</sup><br/> April</h1>
+        <h3 class="logo-txt">wishfulthoughts</h3>
+    </section></a>
+    <section class="bottom">
+        <h4 class="contents">{% if page.subtitle %}{{ 'Contents' }}{% else %}{{ 'Filter' }}{% endif%}</h4>
+             {% if page.toc %}
+            <div class="ui segment">
+                {{ content | toc_only | inject_anchors }}
+            </div>
+             {% else %}
+             <!-- TODO: Add dates filter using the configuration -->
+                <div class="ui segment">
+                    <div class="ui ordered list">
+                        <a class="item">2016</a>
+                        <a class="item">2017</a>
+                        <a class="item">2018</a>
+                    </div>
+                </div>
+             {% endif %}
+    </section>
+</div>
