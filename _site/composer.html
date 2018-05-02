@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ID=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="/js/semantic.min.js"></script>
+    <script src="/js/blog.js"></script>
+    <!-- kendo editor dependancies -->
+    <!-- <link href="/css/kendo/examples-offline.css" rel="stylesheet">
+    <link href="/css/kendo/kendo.common.min.css" rel="stylesheet">
+    <link href="/css/kendo/kendo.rtl.min.css" rel="stylesheet">
+    <link href="/css/kendo/kendo.default.min.css" rel="stylesheet">
+    <link href="/css/kendo/kendo.default.mobile.min.css" rel="stylesheet">
+    <script src="/js/kendo/jquery.min.js"></script>
+    <script src="/js/kendo/jszip.min.js"></script>
+    <script src="/js/kendo/kendo.all.min.js"></script>
+    <script src="/js/kendo/console.js"></script> -->
+</head>
+    
+</head>
+<body>
+
+    <div class="ui two column grid">
+    
+        <div class="four wide sidecard column">
+    <!-- <a href="/"><section class="up" style=" background-image: url(../img/low-contrast-line.png); "> -->
+    <a href="/"><section class="up">
+        <h1 class="date">14<sup>th</sup><br/> April</h1>
+        <h3 class="logo-txt">wishfulthoughts</h3>
+    </section></a>
+    <section class="bottom">
+        <h4 class="contents">Filter</h4>
+             
+             <!-- TODO: Add dates filter using the configuration -->
+                <div class="ui segment">
+                    <div class="ui ordered list">
+                        <a class="item">2016</a>
+                        <a class="item">2017</a>
+                        <a class="item">2018</a>
+                    </div>
+                </div>
+             
+    </section>
+</div>
+    
+        <div class="ui container eleven wide column">
+    
+            <div id="example">
+    <textarea id="editor" rows="10" cols="30" style="height:440px" aria-label="editor">
+                    &lt;p&gt;&lt;img src=&quot;../content/web/editor/kendo-ui-web.png&quot; alt=&quot;Editor for ASP.NET MVC logo&quot; style=&quot;display:block;margin-left:auto;margin-right:auto;&quot; /&gt;&lt;/p&gt;
+                    &lt;p&gt;
+                        Kendo UI Editor allows your users to edit HTML in a familiar, user-friendly way.&lt;br /&gt;
+                        In this version, the Editor provides the core HTML editing engine, which includes basic text formatting, hyperlinks, lists,
+                        and image handling. The widget &lt;strong&gt;outputs identical HTML&lt;/strong&gt; across all major browsers, follows
+                        accessibility standards and provides API for content manipulation.
+                    &lt;/p&gt;
+                    &lt;p&gt;Features include:&lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;Text formatting &amp; alignment&lt;/li&gt;
+                        &lt;li&gt;Bulleted and numbered lists&lt;/li&gt;
+                        &lt;li&gt;Hyperlink and image dialogs&lt;/li&gt;
+                        &lt;li&gt;Cross-browser support&lt;/li&gt;
+                        &lt;li&gt;Identical HTML output across browsers&lt;/li&gt;
+                        &lt;li&gt;Gracefully degrades to a &lt;code&gt;textarea&lt;/code&gt; when JavaScript is turned off&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;p&gt;
+                        Read &lt;a href=&quot;http://docs.telerik.com/kendo-ui&quot;&gt;more details&lt;/a&gt; or send us your
+                        &lt;a href=&quot;http://www.telerik.com/forums/&quot;&gt;feedback&lt;/a&gt;!
+                    &lt;/p&gt;
+                </textarea>
+    <script>
+        $(document).ready(function () {
+            // create Editor from textarea HTML element with default set of tools
+            $("#editor").kendoEditor({
+                resizable: {
+                    content: true,
+                    toolbar: true
+                }
+            });
+        });
+    </script>
+</div>
+    
+            <!-- Footer -->
+<footer class="footer">
+    <div class="copy">wishfulthoughts&copy;copyright</div>
+</footer>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
