@@ -1,0 +1,40 @@
+<ul>
+  <li>
+    <p>I would like to automate how i create new blog posts because i will be making posts easier. A blog feels very necessary for me but its not something am really in love with. When i go to the web interface i should be able to create a new post and have it show in the blog as a new post and persisted for future use. First when i create a new post i should upload to azure the post in a blog storage container. We will also use the same container is used to extract drafts. When we publish the post we are going to  upload to azure and then push changes to a gitbucket repo which will trigger a circle-cli job to rebuild the site and then push changes to github repository.</p>
+  </li>
+  <li>
+    <p>When the github repository master branch is updated the github pages are updated. Note that i might have to use hosting instead because if i can’t get an azure instance. Or find other cdn services that you can upload the drafts and also use to make commits. The reason why we need this is because bitbucket api requires a static file url to make the push to repository. Check if its posible to use blob rather than a file url.</p>
+  </li>
+  <li>
+    <p>ipstack is a nice one to find the public ip based on both the public and local ip. This is really important for security reasons.</p>
+  </li>
+</ul>
+
+<p>Resources</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Github pages
+
+https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/
+https://help.github.com/articles/about-github-pages-and-jekyll/
+
+circle-ci
+
+https://jekyllrb.com/docs/continuous-integration/circleci/
+
+bitbucket
+
+https://developer.atlassian.com/bitbucket/api/2/reference/resource/repositories/%7Busername%7D/%7Brepo_slug%7D/src#post
+
+azure blob client javascript library
+
+https://azure.microsoft.com/en-ca/blog/new-azure-storage-javascript-client-library-for-browsers-preview/
+
+finding location ip
+
+https://github.com/diafygi/webrtc-ips
+
+ip to location
+
+https://ipstack.com/
+</code></pre></div></div>
+
